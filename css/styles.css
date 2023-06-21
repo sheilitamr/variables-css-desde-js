@@ -1,0 +1,36 @@
+:root {
+  --width-scroll: 0;
+  --red: 0;
+  --green: 0;
+  --blue: 0;
+  --positionX: 0;
+  --positionY: 0;
+}
+
+body {
+  min-height: 500vh;
+  background-color: rgb(var(--red), var(--green), var(--blue));
+}
+.scroll-marker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: lightgreen;
+  height: 30px;
+  width: var(--width-scroll);
+}
+.title {
+  position: fixed;
+  color: lightgreen;
+}
+.button-color {
+  position: fixed;
+  top: 70px;
+}
+.mouse-tracking {
+  position: fixed;
+  top: var(--positionY);
+  left: var(--positionX);
+  width: 80px;
+  height: 80px;
+}
